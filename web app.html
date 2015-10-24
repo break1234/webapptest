@@ -11,18 +11,17 @@
 <body>
 <div data-role="page" id="forwardPage">
 	<header data-role="header">
-		<h1>前进视图标题</h1>
+		<h1>navbar导航工具栏</h1>
 	</header>
-
-	<div>点击前进进入第二个视图</div>
-	<footer data-role="footer" class="ui-bar">
-		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#" data-role="button" data-icon="delete">删除</a>
-			<a href="#" data-role="button" data-icon="plus">添加</a>
-			<a href="#" data-role="button" data-icon="arrow-u">向上</a>
-			<a href="#" data-role="button" data-icon="arrow-d">向下</a>
-		</div>
-
+	<div>视图内容区域</div>
+	<footer data-role="footer">
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="#" data-role="button" class="ui-btn-active">照片</a></li>
+				<li><a href="#" data-role="button">状态</a></li>
+				<li><a href="#" data-role="button">信息</a></li>
+			</ul>
+		</nav>
 	</footer>
 </div>
 </body>
