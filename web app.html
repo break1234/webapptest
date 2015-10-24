@@ -9,15 +9,15 @@
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-<section data-role="page" id="firstView">
+<section data-role="page" id="firstView" data-transition="pop">
 	<header data-role="header">第一个视图</header>
 	<article data-role="content">
-		<a href="#secondView">切换到第二个视图</a>
+		<a href="#secondView" data-rel="dialog">切换到第二个视图</a>
 	</article>
 	<footer data-role="footer">页脚</footer>
 </section>
 
-<section data-role="page" id="secondView">
+<section data-role="page" id="secondView" data-transition="filp">
 	<header data-role="header">第二个视图</header>
 	<article data-role="content">
 		<a href="#firstView">切换到第一个视图</a>
