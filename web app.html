@@ -9,36 +9,27 @@
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-<section data-role="page" id="firstView" data-theme="a">
-	<header data-role="header" data-theme="b"><h1>第一个视图</h1></header>
-	<article data-role="content">
-		
-		<input type="button" name="button类型input"/>
-		<input type="submit" name="submit input"/>
-		<input type="reset" name="reset input"/>
-		<input type="image" name="image input">
-		<a href="#" data-role="button" data-icon="home">首页</a>
-		<a href="#" data-role="button" data-icon="home" data-iconpos="top">首页</a>
-
-		<a href="#" data-role="button" data-icon="back" data-inline="true" data-theme="b">back</a>
-		<a href="#" data-role="button" data-icon="forward" data-inline="true" data-theme="c">forward</a>
-
-		<div data-role="controlgroup" data-type="horizontal">
-			<a href="#" data-role="button" data-theme="a">确定</a>
-			<a href="#" data-role="button" data-theme="b">取消</a>
-			<a href="#" data-role="button" data-theme="c">返回</a>
-		</div>
-
-		<div data-role="controlgroup">
-			<a href="#" data-role="button" data-theme="a">确定</a>
-			<a href="#" data-role="button" data-theme="b">取消</a>
-			<a href="#" data-role="button" data-theme="c">返回</a>
-		</div>
-
-
-	</article>
-	<footer data-role="footer" data-theme="c"><h1>页脚</h1></footer>
-</section>
+<div data-role="page" id="forwardPage">
+	<header data-role="header">
+		<a>按钮</a>
+		<h1>前进试图标题</h1>
+		<a href="#backPage">前进</a>
+	</header>
+	<div>单击前进进入第二个视图</div>
+	<footer data-role="footer">
+		<h1>footer bar</h1>
+	</footer>
+</div>
+<div data-role="page" id="backPage">
+	<header data-role="header">
+		<a data-rel="back">后退</a>
+		<h1>后退试图图标</h1>
+	</header>
+	<div>单击后退按钮返回第一个视图</div>
+	<footer data-role="footer">
+		<h1>footer bar</h1>
+	</footer>
+</div>
 
 </body>
 </html>
