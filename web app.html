@@ -2,13 +2,28 @@
 <html>
 <head>
 	<title></title>
-	<meta charset="utf-8">
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
 	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.css">
 	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="jquery.mobile-1.4.5.js"></script>
 </head>
 <body>
-<p>这是一个简单的hellow world实例</p>
+<section data-role="page" id="firstView">
+	<header data-role="header">第一个视图</header>
+	<article data-role="content">
+		<a href="#firstView">切换到第二个视图</a>
+	</article>
+	<footer data-role="footer">页脚</footer>
+</section>
+
+<section data-role="page" id="secondView">
+	<header data-role="header">第二个视图</header>
+	<article data-role="content">
+		<a href="#secondView">切换到第一个视图</a>
+	</article>
+	<footer data-role="footer">页脚</footer>
+</section>
 
 </body>
 </html>
