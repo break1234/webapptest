@@ -14,13 +14,25 @@
 		<h1>列表示例</h1>
 	</header>
 	<div data-role="content">
-		<ul data-role="listview" data-theme="g">
-			<li><a href="#">List 1</a></li>
-			<li><a href="#">List 2</a></li>
-			<li><a href="#">List 3</a></li>
-			<li><a href="#">List 4</a></li>
-			<li><a href="#">List 5</a></li>
-			<li><a href="#">List 6</a></li>
+		<ul data-role="listview">
+			<li>
+				<a href="#" data-add-back-btn="true">List 1</a>
+				<p>这是第一层</p>
+				<ul>
+					<li><a href="#">Sublist 1</a></li>
+					<li><a href="#">Sublist 1</a></li>
+					<li><a href="#">Sublist 1</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" data-add-back-btn="true">List 2</a>
+				<p>这是第一层</p>
+				<ul>
+					<li><a href="#">Sublist 2</a></li>
+					<li><a href="#">Sublist 2</a></li>
+					<li><a href="#">Sublist 2</a></li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 </div>
